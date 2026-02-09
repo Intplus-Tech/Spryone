@@ -23,6 +23,9 @@ export const Header = () => {
         </div>
 
         <button
+          aria-expanded={menuOpen}
+          aria-controls="main-menu"
+
           onClick={() => setMenuOpen(true)}
           >
           <svg
