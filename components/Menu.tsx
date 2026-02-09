@@ -9,23 +9,23 @@ export const Menu = ({ closeMenu }: MenuProps) => {
   return (
     <section className="absolute inset-0 z-50">
       <button
-        className="absolute top-10 right-15 z-50"
+        className="absolute top-layout-y right-layout-x z-50"
         onClick={closeMenu}
         >
         <svg
-          className="w-8.5 h-8.5"
+          className="w-8.5 h-8.5 stroke-background md:stroke-brand"
           viewBox="0 0 34 34"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           >
-          <path d="M32.5268 0.887227L0.707031 32.707" stroke="#D5FF3F" strokeWidth="2"/>
-          <path d="M32.5268 32.5268L0.707031 0.707031" stroke="#D5FF3F" strokeWidth="2"/>
+          <path d="M32.5268 0.887227L0.707031 32.707" strokeWidth="2"/>
+          <path d="M32.5268 32.5268L0.707031 0.707031" strokeWidth="2"/>
         </svg>
       </button>
       <section className="h-full grid grid-cols-1 md:grid-cols-[3fr_2fr]">
-        <section className="relative text-black bg-[#d5ff3f] px-15 py-10">
-          <nav className="mt-32">
-            <ul className="text-nav font-medium leading-none tracking-wide space-y-5">
+        <section className="relative text-black bg-brand px-15 py-10">
+          <nav className="mt-menu-y">
+            <ul className="text-sz-64 font-medium leading-none tracking-wide space-y-5">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -44,7 +44,7 @@ export const Menu = ({ closeMenu }: MenuProps) => {
             </ul>
           </nav>
 
-          <ul className="absolute bottom-10 flex gap-7 text-xl tracking-wide">
+          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-20 leading-nm tracking-wide">
             <li>
               <Link href="">LinkedIn</Link>
             </li>
@@ -57,16 +57,16 @@ export const Menu = ({ closeMenu }: MenuProps) => {
           </ul>
         </section>
 
-        <section className="relative flex items-center text-[#d5ff3f] bg-black px-15 py-10">
+        <section className="relative flex items-center text-brand bg-black px-15 py-10">
           <div>
-            <h2 className="text-xl tracking-wide leading-none">Got an Idea?</h2>
-            <p className="text-5xl leading-none mt-3.75 mb-12.5">Let&apos;s craft brilliant together!</p>
-            <button className="text-2xl tracking-wide border rounded-4xl px-8 py-2">
+            <h2 className="text-sz-20 tracking-wide leading-none">Got an Idea?</h2>
+            <p className="text-sz-48 leading-none mt-[clamp(0.25rem,1.5vw,1rem)] mb-[clamp(1.25rem,3.8vw,4rem)]">Let&apos;s craft brilliant together!</p>
+            <button className="text-sz-24 tracking-wide border rounded-4xl px-[clamp(1rem,2.22vw,3rem)] py-[clamp(0.25rem,0.56vw,1rem)]">
               Get In touch
             </button>
           </div>
 
-          <ul className="absolute bottom-10 flex gap-7 text-xl tracking-wide">
+          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-20 leading-nm tracking-wide">
             <li>
               <Link href="">Terms & Conditions</Link>
             </li>

@@ -3,15 +3,32 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #d5ff3f;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --text-nav: clamp(1.5rem, calc(3.75vw + 0.62rem), 4rem);
+  --text-sz-64: clamp(1.5rem, calc(0.62rem + 3.75vw), 4rem);
+  --text-sz-48: clamp(1.25rem, calc(0.635rem + 2.62vw), 3rem);
+  --text-sz-24: clamp(0.75rem, calc(0.4875rem + 1.12vw), 1.5rem);
+  --text-sz-20: clamp(0.5rem, calc(0.2375rem + 1.12vw), 1.25rem);
+
+  --leading-nm: 1.4;
+
+  --spacing-layout-x: clamp(1rem, 4.1vw, 4.5rem);
+  --spacing-layout-y: clamp(1rem, 2.7vw, 3rem);
+  --spacing-menu-y: clamp(2rem, 8.8vw, 8rem);
+  --spacing-sz-28: clamp(0.8rem, 1.38vw, 1.5rem);
+}
+
+@utility border-feint {
+  border-color: rgba(196,196,196,0.3);
 }
 
 @media (prefers-color-scheme: dark) {

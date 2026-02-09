@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between pb-6 border-b border-b-[rgba(196,196,196,0.3)]">
+      <header className="flex justify-between pb-[clamp(1rem,1.6vw,2rem)] border-b border-feint">
         <div>
           <Link href="/">
             <Image
