@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --brand: #d5ff3f;
+  --background: oklch(82.032% 0.00009 271.152);
+  --foreground: oklch(0% 0 0);
+  --brand: oklch(93.845% 0.2084 121.668);
 }
 
 @theme inline {
@@ -25,6 +25,7 @@
   --spacing-layout-x: clamp(1rem, 4.1vw, 4.5rem);
   --spacing-layout-y: clamp(1rem, 2.7vw, 3rem);
   --spacing-menu-y: clamp(2rem, 8.8vw, 8rem);
+  --spacing-sz-60: clamp(2.625rem, 1.6vw, 4rem);
   --spacing-sz-28: clamp(0.8rem, 1.38vw, 1.5rem);
 }
 
@@ -32,10 +33,37 @@
   border-color: rgba(196,196,196,0.3);
 }
 
+@utility diaeresis {
+  position: relative;
+  display: inline-block;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -0.05em;
+    width: 0.1em;
+    height: 0.1em;
+    border-radius: 999em;
+    background-color: var(--color-brand);
+    pointer-events: none;
+  }
+  
+  &::before {
+    left: 50%;
+    margin-left: -0.12em;
+  }
+  
+  &::after {
+    left: 50%;
+    margin-left: 0.14em;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: oklch(0% 0 0);
+    --foreground: oklch(82.032% 0.00009 271.152);
   }
 }
 

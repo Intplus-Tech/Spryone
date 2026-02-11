@@ -7,11 +7,13 @@ import "./globals.css";
 const hostGrotesk = Host_Grotesk({
   variable: "--font-grotesk",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
