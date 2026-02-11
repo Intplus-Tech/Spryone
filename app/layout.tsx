@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 const hostGrotesk = Host_Grotesk({
-  variable: "--font-grotesk",
+  variable: "--font-host-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
