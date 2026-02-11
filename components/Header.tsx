@@ -20,7 +20,7 @@ export const Header = () => {
   return (
     <>
       <header className="flex justify-between pb-[clamp(1rem,1.6vw,2rem)] border-b border-feint">
-        <div>
+        <div className="w-2/7 md:w-auto">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -40,7 +40,7 @@ export const Header = () => {
           <span className="sr-only">Open Menu</span>
           <svg
             aria-hidden="true"
-            className="w-13.5 h-8.5"
+            className="w-8.5 h-6.5 md:w-13.5 md:h-8.5"
             viewBox="0 0 55 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

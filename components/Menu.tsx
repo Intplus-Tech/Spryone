@@ -22,7 +22,7 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
         <span className="sr-only">Close menu</span>
         <svg
           aria-hidden="true"
-          className="w-8.5 h-8.5 stroke-background md:stroke-brand"
+          className="w-6.5 h-6.5 md:w-8.5 m:h-8.5 stroke-background md:stroke-brand"
           viewBox="0 0 34 34"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +32,9 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
         </svg>
       </button>
       <section className="h-full grid grid-cols-1 md:grid-cols-[3fr_2fr]">
-        <section className="relative text-black bg-brand px-15 py-10">
+        <section className="relative text-background bg-brand px-15 py-10">
           <nav className="mt-menu-y">
-            <ul className="text-sz-64 font-medium leading-none tracking-wide space-y-5">
+            <ul className="text-sz-48 md:text-sz-64 font-medium leading-none tracking-wide space-y-5">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -53,7 +53,7 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
             </ul>
           </nav>
 
-          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-20 leading-nm tracking-wide">
+          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-16 md:text-sz-20 leading-nm tracking-wide">
             <li>
               <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </li>
@@ -66,7 +66,7 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
           </ul>
         </section>
 
-        <section className="relative flex items-center text-brand bg-black px-15 py-10">
+        <section className="relative flex items-center text-brand bg-background px-15 py-10">
           <div>
             <h2 className="text-sz-20 tracking-wide leading-none">Got an Idea?</h2>
             <p className="text-sz-48 leading-none mt-[clamp(0.25rem,1.5vw,1rem)] mb-[clamp(1.25rem,3.8vw,4rem)]">Let&apos;s craft brilliant together!</p>
@@ -75,7 +75,7 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
             </button>
           </div>
 
-          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-20 leading-nm tracking-wide">
+          <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-16 md:text-sz-20 leading-nm tracking-wide">
             <li>
               <Link href="">Terms & Conditions</Link>
             </li>
