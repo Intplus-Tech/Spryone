@@ -4,12 +4,14 @@
   --background: oklch(82.032% 0.00009 271.152);
   --foreground: oklch(0% 0 0);
   --brand: oklch(93.845% 0.2084 121.668);
+  --feint: oklch(82.032% 0.00009 271.152 / 0.3);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand: var(--brand);
+  --color-feint: var(--feint);
 
   --font-grotesk: var(--font-host-grotesk);
   --font-nuni: var(--font-nunito);
@@ -29,10 +31,6 @@
   --spacing-menu-y: clamp(2rem, 8.8vw, 8rem);
   --spacing-sz-60: clamp(2.625rem, 1.6vw, 4rem);
   --spacing-sz-28: clamp(0.8rem, 1.38vw, 1.5rem);
-}
-
-@utility border-feint {
-  border-color: rgba(196,196,196,0.3);
 }
 
 @utility diaeresis {
