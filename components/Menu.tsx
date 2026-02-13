@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "./ui/Button";
 
 type MenuProps = {
   menuOpen: boolean;
@@ -70,9 +71,7 @@ export const Menu = ({ closeMenu, menuOpen }: MenuProps) => {
           <div>
             <h2 className="text-sz-20 tracking-wide leading-none">Got an Idea?</h2>
             <p className="text-sz-48 leading-none mt-[clamp(0.25rem,1.5vw,1rem)] mb-[clamp(1.25rem,3.8vw,4rem)]">Let&apos;s craft brilliant together!</p>
-            <button className="text-sz-24 tracking-wide border rounded-4xl px-[clamp(1rem,2.22vw,3rem)] py-[clamp(0.25rem,0.56vw,1rem)]">
-              Get In touch
-            </button>
+            <Button>Get in touch</Button>
           </div>
 
           <ul className="absolute bottom-layout-y flex gap-sz-28 text-sz-16 md:text-sz-20 leading-nm tracking-wide">

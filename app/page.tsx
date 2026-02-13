@@ -2,7 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Feature } from "@/components/Feature";
 import { OurServices } from "@/components/OurServices";
 import { BestProjects } from "@/components/BestProjects";
-import { ConnectCta } from "@/components/ConnectCta";
+import { CTABanner } from "@/components/CTABanner";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Feature />
       <OurServices />
       <BestProjects />
-      <ConnectCta />
+      <CTABanner />
     </section>
   );
 }

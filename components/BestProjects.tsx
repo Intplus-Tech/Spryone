@@ -1,5 +1,9 @@
+import { SectionHeader } from "./SecionHeader";
+
 export const BestProjects = () => {
   return (
-    <div>BestProjects</div>
+    <section>
+      <SectionHeader title="Best Projects" />
+    </section>
   )
 }
