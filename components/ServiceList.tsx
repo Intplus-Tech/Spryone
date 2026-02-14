@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowIcon } from "./ui/ArrowIcon";
 
 const services = [
@@ -31,8 +32,9 @@ export const ServiceList = () => {
   return (
     <section className="flex flex-col font-grotesk border-y border-feint">
         {services.map((item) => (
-          <div
+          <Link
             key={item.id}
+            href=""
             className="group flex flex-col md:flex-row items-start md:items-center text-foreground/40 py-10 border-b border-feint cursor-pointer"
           >
             <span className="md:w-1/8 text-sz-40 group-hover:text-foreground">
@@ -54,7 +56,7 @@ export const ServiceList = () => {
                 {item.desc}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
     </section>
   );

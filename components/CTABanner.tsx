@@ -7,9 +7,9 @@ export const CTABanner = () => {
         <div className="flex items-center mb-12 md:mb-25 w-full px-8">
           <div className="h-px grow bg-black/30" />
           <div className="flex gap-7 md:gap-14 mx-4 opacity-30">
-            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home-decor/secondary/star-black.svg')] bg-cover bg-center" />
-            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home-decor/secondary/star-black.svg')] bg-cover bg-center" />
-            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home-decor/secondary/star-black.svg')] bg-cover bg-center" />
+            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home/secondary/star-black.svg')] bg-cover bg-center" />
+            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home/secondary/star-black.svg')] bg-cover bg-center" />
+            <div className="w-5 sm:w-8 md:w-10 aspect-square bg-[url('/home/secondary/star-black.svg')] bg-cover bg-center" />
           </div>
           <div className="h-px flex-1 bg-black/30" />
         </div>

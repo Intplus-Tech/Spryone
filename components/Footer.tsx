@@ -9,19 +9,19 @@ export const Footer = () => {
       <nav className="md:col-start-2 col-span-2">
         <ul className="text-sz-16 mb-6 md:mb-0 space-y-2 md:space-y-0 md:flex md:justify-center md:gap-sz-60">
           <li>
-            <Link href="">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="">Services</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li>
-            <Link href="">Project</Link>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <Link href="">About Us</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

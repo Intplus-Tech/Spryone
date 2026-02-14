@@ -29,7 +29,7 @@ export const Feature = () => {
       <div>
         <Image
           className="w-full aspect-2/1 object-cover rounded-2xl md:rounded-4xl"
-          src="/home-decor/secondary/decor-img.png"
+          src="/home/secondary/decor-img.png"
           alt="Decorative image"
           width={1320}
           height={640}

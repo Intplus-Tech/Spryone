@@ -1,4 +1,5 @@
-import { ArrowIcon } from "./ui/ArrowIcon"
+import Link from "next/link";
+import { ArrowIcon } from "./ui/ArrowIcon";
 
 export type Service = {
   id: string
@@ -15,8 +16,9 @@ export function ServicesGrid({ services }: ServicesGridProps) {
   return (
     <section className="grid grid-cols-1 place-items-center lg:grid-cols-3 gap-7.5 font-grotesk mb-16 md:mb-24 lg:mb-45">
         {services.map((service) => (
-          <div 
+          <Link 
             key={service.id}
+            href=""
             className="w-64 sm:w-76 lg:w-92 aspect-9/10 bg-card p-5 rounded-[20px] border border-feint drop-shadow hover:inset-ring-2 hover:ring-feint group cursor-pointer flex flex-col justify-end"
           >
             <span className="absolute top-5 left-5 text-feint text-sz-32 leading-none tracking-wide">
@@ -37,7 +39,7 @@ export function ServicesGrid({ services }: ServicesGridProps) {
               </p>
             </div>
             <ArrowIcon className="absolute top-1/2 translateY-[-50%] right-4 md:right-6 w-6 md:w-11" />
-          </div>
+          </Link>
         ))}
     </section>
   );

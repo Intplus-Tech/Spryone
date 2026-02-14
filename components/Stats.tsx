@@ -33,7 +33,7 @@ export const Stats = () => {
             <span className="text-brand">+</span>
           </h3>
 
-          <p className="text-sz-18 md:text-sz-20 leading-normal tracking-wide min-h-12 mt-2 max-w-[20ch]">
+          <p className="text-sz-16 md:text-sz-18 leading-normal tracking-wide min-h-12 mt-2 max-w-[20ch]">
             {stat.label}
           </p>
         </div>
