@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${hostGrotesk.variable} ${nunito.variable} antialiased min-h-screen flex flex-col mx-auto px-layout-x py-layout-y`}
       >
         <Header />
-        <main className="grow">
+        <main className="flex-1">
           {children}
         </main>
         <Footer />

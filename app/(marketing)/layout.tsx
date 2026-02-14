@@ -1,3 +1,5 @@
+import { Heading } from "@/components/Heading";
+
 export default function MarketingLayout({
   children,
 }: {
@@ -5,7 +7,8 @@ export default function MarketingLayout({
 }) {
   return (
     <section>
-      {children}
+      <Heading />
+        {children}
     </section>
   );
 }
