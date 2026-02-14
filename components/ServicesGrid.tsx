@@ -1,16 +1,16 @@
-import Link from "next/link";
 import { ArrowIcon } from "./ui/ArrowIcon";
+import Link from "next/link";
 
 export type Service = {
   id: string
   title: string
   description: string
   detail: string
-}
+};
 
 type ServicesGridProps = {
   services: Service[]
-}
+};
 
 export function ServicesGrid({ services }: ServicesGridProps) {
   return (

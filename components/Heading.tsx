@@ -1,14 +1,20 @@
-export const Heading = () => {
+type HeaderProps = {
+  head: string
+  main: string
+  desc: string  
+};
+
+export const Heading = ({ head, main, desc  }: HeaderProps) => {
   return (
-    <section className="pt-20 pb-10 text-center px-4">
-      <span className="text-[#c1ff00] text-sm font-medium mb-4 block">
-        About us
+    <section className="my-10 md:my-20 text-center">
+      <span className="text-sz-20 text-brand leading-none tracking-wide font-grotesk mb-2.5 block">
+        {head}
       </span>
-      <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-        About the company
+      <h1 className="text-sz-48 leading-none tracking-wide font-grotesk font-medium mb-3.5">
+        {main}
       </h1>
-      <p className="text-gray-400 text-sm md:text-base max-w-md mx-auto">
-        Learn more about the company and the team behind it.
+      <p className="text-sz-18 md:leading-6 font-nuni">
+        {desc}
       </p>
     </section>
   )

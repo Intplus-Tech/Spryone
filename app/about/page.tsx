@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { Logos } from "@/components/Logos";
+import { Heading } from "@/components/Heading";
+import Image from "next/image";
 
 const stats = [
     {
@@ -22,6 +23,11 @@ const stats = [
 export default function About() {
   return (
     <section className="font-grotesk">
+      <Heading
+        head="About us"
+        main="About the company"
+        desc="Learn more about the company and the team behind it."
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-15.5 mb-9 md:mb-18">
         <div className="relative overflow-hidden h:autto max-sm:h-[35vh]">
           <Image

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { ArrowIcon } from "./ui/ArrowIcon";
+import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
