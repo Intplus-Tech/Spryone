@@ -28,12 +28,12 @@ export const Stats = () => {
           {index !== 0 && (
             <span className="absolute left-0 top-1/4 h-1/2 w-0.5 bg-transparent md:bg-feint"></span>
           )}
-          <h3 className="text-sz-64 leading-none tracking-wide font-grotesk">
+          <h3 className="text-sz-55 md:text-sz-64 leading-none tracking-wide font-grotesk">
             {stat.value}
             <span className="text-brand">+</span>
           </h3>
 
-          <p className="text-sz-16 md:text-sz-18 leading-normal tracking-wide min-h-12 mt-2 max-w-[20ch]">
+          <p className="text-[0.6em] sm:text-sz-16 md:text-sz-18 leading-normal tracking-wide min-h-12 mt-2 max-w-[20ch]">
             {stat.label}
           </p>
         </div>

@@ -26,7 +26,7 @@ export function ServicesGrid({ services }: ServicesGridProps) {
             </span>
 
             <div className="space-y-4">
-              <h2 className="text-sz-55 leading-none tracking-wide max-w-[10ch]">
+              <h2 className="text-sz-48 md:text-sz-55 leading-none tracking-wide max-w-[10ch]">
                 {service.title}
               </h2>
               
