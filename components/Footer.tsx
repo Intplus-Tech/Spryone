@@ -13,7 +13,7 @@ export const Footer = () => {
    after:h-px after:w-[80%]
    after:transition-transform after:origin-left
    ${
-     pathName.startsWith(href)
+     pathName === href
        ? "after:scale-x-100 after:bg-brand"
        : "after:scale-x-0 after:bg-brand hover:after:scale-x-100"
    }`;
