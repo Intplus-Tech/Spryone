@@ -111,7 +111,7 @@ export const ContactForm = () => {
               <label className="flex items-center gap-3">
                 <input
                   type="checkbox"
-                  className="peer relative appearance-none w-4 aspect-square border rounded-full focus:outline-none checked:border-brand checked:bg-[url(/contact/check-mark.svg)] checked:bg-center" />
+                  className="peer relative appearance-none w-4 aspect-square border rounded-full focus:outline-none checked:border-brand checked:bg-[url(/contact/check-mark.svg)] checked:bg-center checked:bg-cover" />
                 <span className="text-foreground/60 font-nuni select-none">subscribe to receive the latest news and exclusive offers</span>
               </label>
             </div>
