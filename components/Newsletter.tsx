@@ -10,13 +10,13 @@ export const Newsletter = () => {
         </div>
         
         <div className="font-nuni">
-          <form className="grid grid-cols-[1fr_auto]">
+          <form className="grid grid-cols-[1fr_auto] max-sm:grid-cols-1 max-sm:gap-4">
             <input 
               type="email" 
               placeholder="Enter your email" 
-              className="bg-[#ddd5dd] rounded-full text-background text-sz-16 leading-2 md:leading-6 px-2 py-1 md:px-4 md:py-1 lg:px-5 lg:py-3 outline-none"
+              className="bg-[#ddd5dd] rounded-full text-background text-sz-16 leading-2 md:leading-6 px-4 py-3 outline-none"
             />
-            <button className="bg-brand text-background rounded-full text-sz-14 md:text-sz-16 leading-2 md:leading-6 font-semibold px-2 py-1 md:px-4 md:py-1 lg:px-5 lg:py-3 hover:opacity-90">
+            <button className="bg-brand text-background rounded-full text-sz-16 leading-2 md:leading-6 font-semibold px-4 py-3 hover:opacity-90">
               Subscribe
             </button>
           </form>
